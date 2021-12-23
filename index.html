@@ -33,34 +33,92 @@
             align-items: center;
             background-color: #1F2937;
             display: flex;
-            height: 300px;
+            height: 400px;
             justify-content: center;
-            padding: 85px;
+            gap: 80px;
         }
-        #main-description-right-side {
-            height: 150px;
+        #main-description-right {
+            height: 250px;
         }
         #main-description-title {
             color: white;
             font-size: 48px;
             font-weight: 800;
         }
-        #main-description {
+        .small-text {
             color: #E5E7EB;
             font-size: 18px;
         }
-        #signup-button {
+        .small-text-black {
+            color: black;
+        }
+        .signup-button {
             border-radius: 12px;
             background-color: #3882F6;
             color: white;
             padding: 10px;
             text-align: center;
         }
-        #image-placeholder {
+        #main-description-left {
+            display: flex;
+            align-items: center;
             background-color: gainsboro;
+            height: 200px;
+            width: 250px;
+            justify-content: center;
         }
         #placeholder-text {
             color: white;
+        }
+        .content-box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px;
+        }
+        #information-header {
+            font-size: 36px;
+            font-weight: 800;
+            color: #1F2937;
+        }
+        .information-box {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .informative-element {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .rounded-element {
+            width: 150px;
+            height: 150px;
+            border: 5px solid #3882F6;
+            border-radius: 25px;
+        }
+        .quote-box {
+            background-color: #E5E7EB;
+            font-size: 36px;
+            font-weight: 100;
+            font-style: italic;
+            height: 200px;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        #quoting {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 650;
+            padding-right: 50px;
+            text-align: right;
+        }
+        #signup-box {
+            
         }
     </style>
 </head>
@@ -76,27 +134,46 @@
         </div>
     </div>
     <div class="title-box">
-        <div id='main-description-right-side'>
-            <h1 id='main-description-title'>What a cool technological development; it's unbelievable</h1>
-            <p id='main-description'>
-                It's sort of unbelievable, how we're able to style our own customizeably marked
-                up literature for anyone in the world to see, so long as they have an internet
-                connection. I love the internet.
-            </p>
-            <button id='signup-button'>Sign me up for THAT!</button>
+        <div id='main-description-right'>
+            <h1 id='main-description-title'>This is pretty awesome</h1>
+            <p class='small-text'>the utilization of a cool technology is something<br>to be celebrated. So celerbate with us</p>
+            <button class='signup-button'>Sign up</button>
         </div>
-        <div id='image-placeholder'>
-            <p id='placeholder-text'>Placeholder for image</p>
+        <div id='main-description-left'>
+            <p id='placeholder-text'>Image goes here</p>
         </div>
     </div>
     <div class="content-box">
-        
+        <h1 id='information-header'>Some quick info</h1>
+        <div class='information-box'>
+            <div class='informative-element'>
+                <div class='rounded-element'></div>
+                <p class='small-text-black'>Some subtext under<br>an image or something</p>
+            </div>
+            <div class='informative-element'>
+                <div class='rounded-element'></div>
+                <p class='small-text-black'>Some more subtext</p>
+            </div>
+            <div class='informative-element'>
+                <div class="rounded-element"></div>
+                <p class='small-text-black'>I might not be<br>picking up on something</p>
+            </div>
+            <div class='informative-element'>
+                <div class="rounded-element"></div>
+                <p class='small-text-black'>IDK.</p>
+            </div>
+        </div>
     </div>
     <div class="quote-box">
-
+        <p>The ancients said: Upon completion of college, immediately place two thousand dollars into a 401k</p>
+        <div id='quoting'>
+            <p>- Gibbon, probably</p>
+        </div>
     </div>
     <div class="content-box">
-        
+        <div id='signup-box'>
+            
+        </div>
     </div>
     <div class='footer-box'>
         
